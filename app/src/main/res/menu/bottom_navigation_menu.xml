@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Makanan"
+        android:id="@+id/MenuMakanan"
+        android:icon="@drawable/baseline_restaurant_menu_36"
+        />
+    <item
+        android:title="Minuman"
+        android:id="@+id/MenuMinuman"
+        android:icon="@drawable/baseline_emoji_food_beverage_36"
+        />
+</menu>

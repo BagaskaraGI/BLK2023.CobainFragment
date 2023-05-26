@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MenuMakanan">
+
+
+    <fragment
+        android:id="@+id/MenuMakanan"
+        android:name="com.example.cobafragment2.MenuMakanan"
+        android:label="fragment_pilihan_makanan"
+        tools:layout="@layout/fragment_pilihan_makanan" />
+    <fragment
+        android:id="@+id/MenuMinuman"
+        android:name="com.example.cobafragment2.MenuMinuman"
+        android:label="fragment_pilihan_minuman"
+        tools:layout="@layout/fragment_pilihan_minuman" />
+</navigation>
