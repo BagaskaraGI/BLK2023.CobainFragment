@@ -16,4 +16,14 @@
         android:name="com.example.cobafragment2.MenuMinuman"
         android:label="fragment_pilihan_minuman"
         tools:layout="@layout/fragment_pilihan_minuman" />
+    <fragment
+        android:id="@+id/MenuCart"
+        android:name="com.example.cobafragment2.MenuCart"
+        android:label="fragment_menu_cart"
+        tools:layout="@layout/fragment_menu_cart" />
+    <fragment
+        android:id="@+id/MenuAccount"
+        android:name="com.example.cobafragment2.MenuAccount"
+        android:label="fragment_menu_account"
+        tools:layout="@layout/fragment_menu_account" />
 </navigation>

@@ -12,4 +12,14 @@
         android:id="@+id/MenuMinuman"
         android:icon="@drawable/baseline_emoji_food_beverage_36"
         />
+    <item
+        android:title="Cart"
+        android:id="@+id/MenuCart"
+        android:icon="@drawable/baseline_shopping_cart_36"
+        />
+    <item
+        android:title="User"
+        android:id="@+id/MenuAccount"
+        android:icon="@drawable/baseline_account_circle_36"
+        />
 </menu>
