@@ -35,12 +35,12 @@
                 android:text="Nasi Goreng"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/gambarMakanan1"
-                app:layout_constraintTop_toTopOf="@+id/gambarMakanan1" />
+                app:layout_constraintStart_toEndOf="@+id/gambarMakanan"
+                app:layout_constraintTop_toTopOf="@+id/gambarMakanan" />
 
             <com.google.android.material.imageview.ShapeableImageView
 
-                android:id="@+id/gambarMakanan1"
+                android:id="@+id/gambarMakanan"
                 android:layout_width="196dp"
                 android:layout_height="130dp"
                 android:layout_marginStart="8dp"
@@ -60,7 +60,7 @@
                 android:layout_marginTop="4dp"
                 android:text="Rp. 20.000"
                 android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/gambarMakanan1"
+                app:layout_constraintStart_toEndOf="@+id/gambarMakanan"
                 app:layout_constraintTop_toBottomOf="@+id/judulMakanan" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
