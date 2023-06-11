@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentMenuDetails">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/judulFragmentDetailMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Detail Menu"
+        android:textColor="@color/purple_500"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/tvImageMenu"
+        android:layout_width="0dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judulFragmentDetailMenu"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/tvNamaMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nama Menu"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvImageMenu"
+        app:layout_constraintTop_toBottomOf="@+id/tvImageMenu" />
+
+    <TextView
+        android:id="@+id/tvHargaMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Rp. Harga Menu"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvImageMenu"
+        app:layout_constraintTop_toBottomOf="@+id/tvImageMenu" />
+
+    <TextView
+        android:id="@+id/tvDeskripsiMenu"
+        android:layout_width="0dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Deskripsi Menu"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaMenu" />
+
+    <Button
+        android:id="@+id/buttonAddToCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Add to Cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

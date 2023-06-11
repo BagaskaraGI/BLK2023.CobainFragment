@@ -2,4 +2,13 @@
     <string name="app_name">CobaFragment2</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc_menu_makanan_1">Cumi Crispy Telur Asin adalah hidangan laut yang terdiri dari potongan cumi yang digoreng garing dan renyah, disajikan dengan taburan potongan telur asin yang gurih. Kombinasi rasa gurih, tekstur renyah, dan kelezatan telur asin menjadikan hidangan ini populer di kalangan pencinta makanan laut di Indonesia.</string>
+    <string name="desc_menu_makanan_2">Sapo Tahu adalah hidangan khas Tionghoa-Indonesia yang terdiri dari tahu sutra yang lembut, disajikan dengan campuran daging, sayuran segar, dan saus kental yang kaya rasa. </string>
+    <string name="desc_menu_makanan_3">Nasi Goreng adalah salah satu hidangan khas Indonesia yang terdiri dari nasi yang digoreng dengan berbagai bahan tambahan. Nasi putih dimasak bersama dengan kecap manis, bumbu-bumbu seperti bawang merah, bawang putih, dan cabai, serta biasanya ditambahkan dengan potongan daging ayam, udang, atau irisan sosis. Hidangan ini juga seringkali dilengkapi dengan sayuran seperti wortel, kacang polong, dan daun bawang.</string>
+
+    <string name="desc_menu_minuman_1">Es Teh Manis adalah minuman yang populer di Indonesia, terdiri dari teh yang diseduh dan didinginkan, kemudian diberi tambahan gula sesuai selera. Minuman ini memiliki rasa yang menyegarkan dan manis, dengan perpaduan antara kehangatan teh dan kesejukan es saat disajikan dalam gelas yang berisi es batu.</string>
+    <string name="desc_menu_minuman_2">Jus Jeruk adalah minuman segar yang terbuat dari perasan jeruk segar. Dengan rasa yang manis dan segar, jus jeruk merupakan pilihan yang populer untuk menikmati buah jeruk yang kaya akan vitamin C.</string>
+    <string name="desc_menu_minuman_3">Jus Alpukat adalah minuman lezat yang terbuat dari buah alpukat yang dihaluskan dan dicampur dengan susu atau yogurt, serta pemanis seperti gula atau madu. Minuman ini memiliki tekstur yang krimi dan kaya akan nutrisi, karena alpukat mengandung lemak sehat dan serat. </string>
+
+
 </resources>

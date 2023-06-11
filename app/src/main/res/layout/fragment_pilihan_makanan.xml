@@ -5,179 +5,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuMakanan">
+    tools:context=".FragmentMenuMakanan">
 
-    <!-- TODO: Update blank fragment layout -->
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewMakanan"
-        android:layout_width="381dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMenuMakanan"
+        android:layout_width="409dp"
+        android:layout_height="572dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/judulMenuMakanan" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/judulMakanan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="40dp"
-                android:text="Nasi Goreng"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/gambarMakanan"
-                app:layout_constraintTop_toTopOf="@+id/gambarMakanan" />
-
-            <com.google.android.material.imageview.ShapeableImageView
-
-                android:id="@+id/gambarMakanan"
-                android:layout_width="196dp"
-                android:layout_height="130dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                tools:src="@drawable/_f722f788063d" />
-
-            <TextView
-                android:id="@+id/hargaMakanan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="4dp"
-                android:text="Rp. 20.000"
-                android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/gambarMakanan"
-                app:layout_constraintTop_toBottomOf="@+id/judulMakanan" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewMakanan2"
-        android:layout_width="381dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="4dp"
+    <TextView
+        android:id="@+id/judulMenuMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Menu Makanan"
+        android:textColor="@color/purple_500"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardViewMakanan">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="204dp">
-
-            <com.google.android.material.imageview.ShapeableImageView
-
-                android:id="@+id/gambarMakanan2"
-                android:layout_width="196dp"
-                android:layout_height="130dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                tools:src="@drawable/cumi_crispy_telur_asin" />
-
-            <TextView
-                android:id="@+id/judulMakanan2"
-                android:layout_width="wrap_content"
-                android:layout_height="27dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="40dp"
-                android:text="Cumi Crispy"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/gambarMakanan2"
-                app:layout_constraintTop_toTopOf="@+id/gambarMakanan2" />
-
-            <TextView
-                android:id="@+id/hargaMakanan2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="4dp"
-                android:text="Rp. 20.000"
-                android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/gambarMakanan2"
-                app:layout_constraintTop_toBottomOf="@+id/judulMakanan2" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewMakanan3"
-        android:layout_width="381dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardViewMakanan2">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="204dp">
-
-            <com.google.android.material.imageview.ShapeableImageView
-
-                android:id="@+id/gambarMakanan3"
-                android:layout_width="196dp"
-                android:layout_height="130dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                tools:src="@drawable/sapo_tahu" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="40dp"
-                android:text="Sapo Tahu"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/gambarMakanan3"
-                app:layout_constraintTop_toTopOf="@+id/gambarMakanan3" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="4dp"
-                android:text="Rp. 20.000"
-                android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/gambarMakanan3"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

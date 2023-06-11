@@ -8,22 +8,45 @@
 
     <fragment
         android:id="@+id/MenuMakanan"
-        android:name="com.example.cobafragment2.MenuMakanan"
+        android:name="com.example.cobafragment2.FragmentMenuMakanan"
         android:label="fragment_pilihan_makanan"
-        tools:layout="@layout/fragment_pilihan_makanan" />
+        tools:layout="@layout/fragment_pilihan_makanan" >
+        <action
+            android:id="@+id/action_MenuMakanan_to_fragmentMenuDetails"
+            app:destination="@id/fragmentMenuDetails" />
+    </fragment>
     <fragment
         android:id="@+id/MenuMinuman"
-        android:name="com.example.cobafragment2.MenuMinuman"
+        android:name="com.example.cobafragment2.FragmentMenuMinuman"
         android:label="fragment_pilihan_minuman"
-        tools:layout="@layout/fragment_pilihan_minuman" />
+        tools:layout="@layout/fragment_pilihan_minuman" >
+        <action
+            android:id="@+id/action_MenuMinuman_to_fragmentMenuDetails"
+            app:destination="@id/fragmentMenuDetails" />
+    </fragment>
     <fragment
         android:id="@+id/MenuCart"
-        android:name="com.example.cobafragment2.MenuCart"
+        android:name="com.example.cobafragment2.FragmentMenuCart"
         android:label="fragment_menu_cart"
         tools:layout="@layout/fragment_menu_cart" />
     <fragment
         android:id="@+id/MenuAccount"
-        android:name="com.example.cobafragment2.MenuAccount"
+        android:name="com.example.cobafragment2.FragmentMenuAccount"
         android:label="fragment_menu_account"
         tools:layout="@layout/fragment_menu_account" />
+    <fragment
+        android:id="@+id/fragmentMenuDetails"
+        android:name="com.example.cobafragment2.FragmentMenuDetails"
+        android:label="fragment_menu_details"
+        tools:layout="@layout/fragment_menu_details" >
+        <argument
+            android:name="currentMenu"
+            app:argType="com.example.cobafragment2.data.Menu" />
+        <action
+            android:id="@+id/action_fragmentMenuDetails_to_MenuMinuman"
+            app:destination="@id/MenuMinuman" />
+        <action
+            android:id="@+id/action_fragmentMenuDetails_to_MenuMakanan"
+            app:destination="@id/MenuMakanan" />
+    </fragment>
 </navigation>
