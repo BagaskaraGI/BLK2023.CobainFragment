@@ -16,7 +16,6 @@ import com.example.cobafragment2.data.Menu
 class MenuListAdapter(private val fragment: Fragment):RecyclerView.Adapter<MenuListAdapter.MyViewHolder>() {
     private var menuList = emptyList<Menu>()
 
-
     class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -29,11 +28,13 @@ class MenuListAdapter(private val fragment: Fragment):RecyclerView.Adapter<MenuL
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentMenu = menuList[position]
-        holder.itemView.findViewById<TextView>(R.id.judulMakanan).text = currentMenu.namaMenu
-        holder.itemView.findViewById<TextView>(R.id.hargaMakanan).text = currentMenu.hargaMenu.toString()
-        holder.itemView.findViewById<ImageView>(R.id.gambarMakanan).setImageResource(currentMenu.gambarMenuResID)
+        // Bedain Makanan sama minuman
 
-        holder.itemView.findViewById<CardView>(R.id.cardViewMakanan).setOnClickListener {
+        holder.itemView.findViewById<TextView>(R.id.judulMenu).text = currentMenu.namaMenu
+        holder.itemView.findViewById<TextView>(R.id.hargaMenu).text = currentMenu.hargaMenu.toString()
+        holder.itemView.findViewById<ImageView>(R.id.gambarMenu).setImageResource(currentMenu.gambarMenuResID)
+
+        holder.itemView.findViewById<CardView>(R.id.cardViewListMenu).setOnClickListener {
             val action = when(fragment){
                 is FragmentMenuMakanan -> FragmentMenuMakananDirections.actionMenuMakananToFragmentMenuDetails(currentMenu)
                 is FragmentMenuMinuman -> FragmentMenuMinumanDirections.actionMenuMinumanToFragmentMenuDetails(currentMenu)

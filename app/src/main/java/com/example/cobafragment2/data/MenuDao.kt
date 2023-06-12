@@ -21,10 +21,10 @@ interface MenuDao {
     @Query("SELECT * FROM menu_table ORDER BY id ASC")
     fun readAllData(): LiveData<List<Menu>>
 
-    @Query("SELECT * FROM menu_table WHERE tipeMenu = 'makanan'")
+    @Query("SELECT * FROM menu_table WHERE tipeMenu = 'Makanan'")
     fun getMakananMenu(): LiveData<List<Menu>>
 
-    @Query("SELECT * FROM menu_table WHERE tipeMenu = 'minuman'")
+    @Query("SELECT * FROM menu_table WHERE tipeMenu = 'Minuman'")
     fun getMinumanMenu(): LiveData<List<Menu>>
 
 
