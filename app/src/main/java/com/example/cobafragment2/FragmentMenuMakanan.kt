@@ -19,8 +19,8 @@ import com.example.cobafragment2.databinding.FragmentPilihanMakananBinding
 class FragmentMenuMakanan : Fragment() {
 
     private lateinit var binding: FragmentPilihanMakananBinding
-    private var _binding : FragmentPilihanMakananBinding? = null
-    private val bindings get() = _binding!!
+//    private var _binding : FragmentPilihanMakananBinding? = null
+//    private val bindings get() = _binding!!
     private lateinit var mMenuViewModel : MenuViewModel
 
 
@@ -29,7 +29,7 @@ class FragmentMenuMakanan : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentPilihanMakananBinding.inflate(layoutInflater,container,false)
+//        _binding = FragmentPilihanMakananBinding.inflate(layoutInflater,container,false)
         binding = FragmentPilihanMakananBinding.inflate(layoutInflater,container,false)
 
 
@@ -41,6 +41,7 @@ class FragmentMenuMakanan : Fragment() {
         rvListMenuMakanan.adapter = adapter
         rvListMenuMakanan.layoutManager = LinearLayoutManager(requireContext())
 
+        //Memasukan data yang diambil dari database ke adapter
         mMenuViewModel = ViewModelProvider(this).get(MenuViewModel::class.java)
         mMenuViewModel.readMenuMakananData.observe(viewLifecycleOwner)
         {

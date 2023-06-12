@@ -20,14 +20,16 @@ class MenuViewModel(application: Application):AndroidViewModel(application) {
         val menuDao = MenuDatabase.getDatabase(application).menuDao()
         repository = MenuRepository(menuDao)
 
+        readAllData = repository.readAllData
+        readMenuMakananData = repository.readMenuMakananData
+        readMenuMinumanData = repository.readMenuMinumanData
+
 //        readData = when(fragment){
 //            is FragmentMenuMakanan -> repository.readMenuMakananData
 //            is FragmentMenuMinuman -> repository.readMenuMinumanData
 //            else -> repository.readAllData
 //        }
-        readAllData = repository.readAllData
-        readMenuMakananData = repository.readMenuMakananData
-        readMenuMinumanData = repository.readMenuMinumanData
+
     }
 }
 

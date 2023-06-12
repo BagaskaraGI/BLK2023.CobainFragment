@@ -35,8 +35,6 @@ class MainActivity : AppCompatActivity() {
         val menuMinuman2 = Menu(5,"Jus Jeruk", 7000, R.drawable.jus_jeruk,context.getString(R.string.desc_menu_makanan_2),"Minuman")
         val menuMinuman3 = Menu(6,"Jus Alpukat", 10000, R.drawable.manfaat_jus_alpukat,context.getString(R.string.desc_menu_makanan_3),"Minuman")
 
-
-
         val listMenu : List<Menu> = listOf(menuMakanan1, menuMakanan2, menuMakanan3, menuMinuman1, menuMinuman2,menuMinuman3)
 
 
